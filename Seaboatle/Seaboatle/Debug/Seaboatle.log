@@ -1,0 +1,42 @@
+﻿  Source.cpp
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(6,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(41,24): warning C4309: =: усечение константного значения
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(47,24): warning C4309: =: усечение константного значения
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(53,24): warning C4309: =: усечение константного значения
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(59,24): warning C4309: =: усечение константного значения
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(69,23): warning C4309: =: усечение константного значения
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(75,23): warning C4309: =: усечение константного значения
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(85,23): warning C4309: =: усечение константного значения
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(91,23): warning C4309: =: усечение константного значения
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(101,23): warning C4309: =: усечение константного значения
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(107,23): warning C4309: =: усечение константного значения
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(116,23): warning C4309: =: усечение константного значения
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(122,23): warning C4309: =: усечение константного значения
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(136,20): error C2062: тип "int" не требуется
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(136,29): warning C4552: "<": результат выражения не используется
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(136,37): error C2065: tempx: необъявленный идентификатор
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(136,44): error C2059: синтаксическая ошибка: )
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(137,5): error C2143: синтаксическая ошибка: отсутствие ";" перед "for"
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(137,24): error C2062: тип "int" не требуется
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(137,35): warning C4552: "<": результат выражения не используется
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(137,45): error C2065: tempy: необъявленный идентификатор
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(137,52): error C2059: синтаксическая ошибка: )
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(140,27): error C2065: tempx: необъявленный идентификатор
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(140,44): error C2065: tempy: необъявленный идентификатор
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(140,50): error C2059: синтаксическая ошибка: ;
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(143,8): error C2065: tr: необъявленный идентификатор
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(146,21): warning C4309: =: усечение константного значения
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(151,2): error C2059: синтаксическая ошибка: for
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(151,2): error C2143: синтаксическая ошибка: отсутствие ")" перед ";"
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(151,20): error C2143: синтаксическая ошибка: отсутствие ";" перед "<"
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(151,20): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(151,27): error C2143: синтаксическая ошибка: отсутствие ";" перед "++"
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(151,27): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(151,26): error C2086: int i: переопределение
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(151): message : см. объявление "i"
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(151,29): error C2059: синтаксическая ошибка: )
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(152,2): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(152,2): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(167,2): error C2059: синтаксическая ошибка: return
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(168,1): error C2059: синтаксическая ошибка: }
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(168,1): error C2143: синтаксическая ошибка: отсутствие ";" перед "}"

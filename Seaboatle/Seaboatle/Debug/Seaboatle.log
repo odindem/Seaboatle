@@ -1,27 +1,38 @@
 ﻿  Source.cpp
 D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(7,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(46,24): warning C4309: =: усечение константного значения
-D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(52,24): warning C4309: =: усечение константного значения
-D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(58,24): warning C4309: =: усечение константного значения
-D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(64,24): warning C4309: =: усечение константного значения
-D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(74,23): warning C4309: =: усечение константного значения
-D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(80,23): warning C4309: =: усечение константного значения
-D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(90,23): warning C4309: =: усечение константного значения
-D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(96,23): warning C4309: =: усечение константного значения
-D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(106,23): warning C4309: =: усечение константного значения
-D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(112,23): warning C4309: =: усечение константного значения
-D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(121,23): warning C4309: =: усечение константного значения
-D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(127,23): warning C4309: =: усечение константного значения
-D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(165,21): warning C4309: =: усечение константного значения
-D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(182,23): warning C4309: =: усечение константного значения
-D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(200,24): warning C4309: =: усечение константного значения
-D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(218,23): warning C4309: =: усечение константного значения
-D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(235,24): warning C4309: =: усечение константного значения
-D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(253,24): warning C4309: =: усечение константного значения
-D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(292,23): warning C4309: =: усечение константного значения
-D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(309,24): warning C4309: =: усечение константного значения
-D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(327,24): warning C4309: =: усечение константного значения
-D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(345,23): warning C4309: =: усечение константного значения
-D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(362,24): warning C4309: =: усечение константного значения
-D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(380,24): warning C4309: =: усечение константного значения
-  Seaboatle.vcxproj -> D:\MyGitHub\Seaboatle\Seaboatle\Debug\Seaboatle.exe
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(51,24): warning C4309: =: усечение константного значения
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(57,24): warning C4309: =: усечение константного значения
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(63,24): warning C4309: =: усечение константного значения
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(69,24): warning C4309: =: усечение константного значения
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(79,23): warning C4309: =: усечение константного значения
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(85,23): warning C4309: =: усечение константного значения
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(95,23): warning C4309: =: усечение константного значения
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(101,23): warning C4309: =: усечение константного значения
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(111,23): warning C4309: =: усечение константного значения
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(117,23): warning C4309: =: усечение константного значения
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(126,23): warning C4309: =: усечение константного значения
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(132,23): warning C4309: =: усечение константного значения
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(161,21): warning C4309: =: усечение константного значения
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(178,23): warning C4309: =: усечение константного значения
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(196,24): warning C4309: =: усечение константного значения
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(214,23): warning C4309: =: усечение константного значения
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(231,24): warning C4309: =: усечение константного значения
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(249,24): warning C4309: =: усечение константного значения
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(278,23): warning C4309: =: усечение константного значения
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(295,24): warning C4309: =: усечение константного значения
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(313,24): warning C4309: =: усечение константного значения
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(331,23): warning C4309: =: усечение константного значения
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(348,24): warning C4309: =: усечение константного значения
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(366,24): warning C4309: =: усечение константного значения
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(395,23): warning C4309: =: усечение константного значения
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(412,24): warning C4309: =: усечение константного значения
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(430,24): warning C4309: =: усечение константного значения
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(448,23): warning C4309: =: усечение константного значения
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(465,24): warning C4309: =: усечение константного значения
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(483,24): warning C4309: =: усечение константного значения
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(509,23): error C2062: тип "int" не требуется
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(509,33): warning C4552: "<": результат выражения не используется
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(509,44): error C2065: l: необъявленный идентификатор
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(509,47): error C2059: синтаксическая ошибка: )
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(510,4): error C2143: синтаксическая ошибка: отсутствие ";" перед "if"
+D:\MyGitHub\Seaboatle\Seaboatle\Seaboatle\Source.cpp(510,13): error C2065: l: необъявленный идентификатор

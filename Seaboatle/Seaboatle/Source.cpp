@@ -5,9 +5,7 @@ using namespace std;
 int main()
 {
 	srand(time(NULL));
-	setlocale(LC_ALL, "Russian");
-	wcout.imbue(locale(".1251"));
-	wcin.imbue(locale(".866"));
+
 	char sea[12][12];
 	char sea2[12][12];
 	int k1 = 0, k2 = 0, k3 = 0, k4 = 0;
@@ -25,9 +23,9 @@ int main()
 			sea2[i][0] = 8;
 			sea2[0][i] = 8;
 			sea[i][11] = 47 + i;
-			sea[11][i] = 65 + i;
+			sea[11][i] = 97 + i;
 			sea2[i][11] = 47 + i;
-			sea2[11][i] = 65 + i;
+			sea2[11][i] = 97 + i;
 	}
 	sea[11][10] = 0;
 	sea[11][11] = 0;
@@ -486,33 +484,52 @@ int main()
 			}
 		}
 	}
-	cout << "Почнемо гру!\nНатиснiть будь яку клавiшу для початку!" << endl;
+	cout << "Pochnemo gru\nNatisnit bud yaku klavishu!" << endl;
 	system("pause");
 	system("CLS");
 	int ship = 20;
-	while (ship>0)
+	for (int i = 0; i < 12; i++)
+	{
+		for (int j = 0; j < 12; j++)
+		{
+			
+			cout << sea2[i][j];
+
+		}
+		cout << endl;
+	}
+	while (ship>1)
 	{
 		char v;
-		int h, vint;
+		int h, vint=0;
 		for (int i = 0; i < 12; i++)
 		{
 			for (int j = 0; j < 12; j++)
 			{
 				cout << sea[i][j];
-				/*cout << sea2[i][j];*/
+				
 
 			}
 			cout << endl;
 		}
-		cout << "Ведiть координати!\nБуква->Цифра" << endl;
-		cin >> v >> h;
-		for (int i = 0, int l = 65; i < 10; i++, l++)
-			if (v == l)
+		cout <<endl<< "Vedit koordinaty!\nBukva->" << endl;
+		cin >> v;
+		cout << "Cifra->" << endl;
+		cin >> h;
+		h++;
+		system("CLS");
+		for (int i = 1,  l = 97; i < 11; i++, l++)
+			if ((int)v == l)
+			{
 				vint = i;
-		
+				break;
+			}
+		sea[h][vint] = sea2[h][vint];
+		if (sea[h][vint] == 178)
+			ship--;
 
 	}
-	
+	cout << "Vitayo Vi vigrali!!!" <<  endl;
 	
 
 	return 0;

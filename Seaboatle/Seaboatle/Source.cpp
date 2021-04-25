@@ -6,20 +6,24 @@ void zapovnenya(char sea2[][COL], int size);
 int main()
 {
 	srand(time(NULL));
-
+	int choys=1;
 
 	char sea[COL][COL];
 	char sea2[COL][COL];
-	
+	char sea0[COL][COL];
+	char z = '|';
 	for (int i = 0; i < COL; i++)
 		for (int j = 0; j < COL; j++)
 		{
 			sea[i][j] = 0;
 			sea2[i][j] = 0;
+			sea0[i][j] = 0;
 		}
 
 	for (int i = 0; i < 11; i++)
 	{
+			sea0[i][0] = 8;
+			sea0[0][i] = 8;
 			sea[i][0] = 8;
 			sea[0][i] = 8;
 			sea2[i][0] = 8;
@@ -28,65 +32,112 @@ int main()
 			sea[11][i] = 97 + i;
 			sea2[i][11] = 48 + i;
 			sea2[11][i] = 97 + i;
+			sea0[i][11] = 48 + i;
+			sea0[11][i] = 97 + i;
 	}
 	sea[11][10] = 0;
 	sea[11][11] = 0;
 	sea[0][11] = 0;
 	sea[10][11] = 48;
+	sea0[11][10] = 0;
+	sea0[11][11] = 0;
+	sea0[0][11] = 0;
+	sea0[10][11] = 48;
 	zapovnenya(sea2, COL);
-	cout << "Pochnemo gru\nNatisnit bud yaku klavishu!" << endl;
-	system("pause");
+	cout << "Oberit kilkist gravciv\n1 - Odin gravec\n2 - Dva gravci\n";
+	cin >> choys;
+
 	system("CLS");
+	zapovnenya(sea0, COL);
+	bool step=true;
 	int ship = 20;
-	for (int i = 0; i < 12; i++)
+	int ship1 = 20;
+	if (choys == 1)
 	{
-		for (int j = 0; j < 12; j++)
+		while (true)
 		{
-			
-			cout << sea2[i][j];
-			cout<< sea2[i][k];
-			
-			
-				if (j == 0)
-					cout << "\t\t";
-		
-		}
-		cout << endl;
-	}
-	while (ship>0)
-	{
-		char v;
-		int h, vint=0;
-		for (int i = 0; i < 12; i++)
-		{
-			for (int j = 0; j < 12; j++)
+			step = true;
+			while (step)
 			{
-				cout << sea[i][j];
-				
 
+				step = 0;
+				char v;
+				int h, vint = 0;
+				for (int i = 0; i < 12; i++)
+				{
+					cout << z << ' ';
+					for (int j = 0; j < 12; j++)
+						cout << sea[i][j];
+
+					cout << "\t\t"<< z<<' ';
+					for (int k = 0; k < 12; k++)
+						cout << sea0[i][k];
+
+					cout << endl;
+				}
+				cout << endl << "Vedit koordinaty!\nBukva->" << endl;
+				cin >> v;
+				cout << "Cifra->" << endl;
+				cin >> h;
+
+				system("CLS");
+				for (int i = 1, l = 97; i < 11; i++, l++)
+					if ((int)v == l)
+					{
+						vint = i;
+						break;
+					}
+				sea[h][vint] = sea2[h][vint];
+				if (sea[h][vint] == -78)
+				{
+					ship--;
+					step = 1;
+				}
+				else if (sea[h][vint] == 0)
+					sea[h][vint] = 42;
+				if (ship == 0)
+				{
+					cout << "Vitayo Vi vigrali!!!" << endl;
+					break;
+				}
 			}
-			cout << endl;
+
+			step = true;
+				while (step)
+				{
+
+					system("CLS");
+					step = 0;
+					int v,h;
+					
+					v = rand() % 10 + 1;
+					h = rand() % 10 + 1;
+					if (sea0[h][v] == 42 || sea0[h][v] == 42 == 219)
+						step = 1;
+					if (sea0[h][v] == -78)
+					{
+						ship1--;
+						step = 1;
+						sea0[h][v] = 219;
+					}
+					else if (sea0[h][v] == 0)
+						sea0[h][v] = 42;
+					if (ship1 == 0)
+					{
+						cout << "Vi prograli!" << endl;
+						break;
+					}
+				}
+			
+			
+			
 		}
-		cout <<endl<< "Vedit koordinaty!\nBukva->" << endl;
-		cin >> v;
-		cout << "Cifra->" << endl;
-		cin >> h;
+	}
+	else if (choys == 2)
+	{
+
+	}
 	
-		system("CLS");
-		for (int i = 1,  l = 97; i < 11; i++, l++)
-			if ((int)v == l)
-			{
-				vint = i;
-				break;
-			}
-		sea[h][vint] = sea2[h][vint];
-		if (sea[h][vint] == -78)
-			ship--;
-		else if (sea[h][vint] == 0)
-			sea[h][vint] = 42;
-
-	}
-	cout << "Vitayo Vi vigrali!!!" <<  endl;
 	
 
 	return 0;
@@ -197,8 +248,7 @@ void zapovnenya(char sea2[][COL], int size)
 			}
 		}
 	}
-
-
+	
 	while (k3 != 2)
 	{
 		int tr = 0;
@@ -315,7 +365,7 @@ void zapovnenya(char sea2[][COL], int size)
 			}
 		}
 	}
-
+	
 	while (k2 != 3)
 	{
 		int tr = 0;
@@ -432,7 +482,7 @@ void zapovnenya(char sea2[][COL], int size)
 			}
 		}
 	}
-
+	
 	while (k1 != 4)
 	{
 		int tr = 0;

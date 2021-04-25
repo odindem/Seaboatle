@@ -11,6 +11,7 @@ int main()
 	char sea[COL][COL];
 	char sea2[COL][COL];
 	char sea0[COL][COL];
+	char sea01[COL][COL];
 	char z = '|';
 	for (int i = 0; i < COL; i++)
 		for (int j = 0; j < COL; j++)
@@ -18,10 +19,13 @@ int main()
 			sea[i][j] = 0;
 			sea2[i][j] = 0;
 			sea0[i][j] = 0;
+			sea01[i][j] = 0;
 		}
 
 	for (int i = 0; i < 11; i++)
 	{
+		sea01[i][0] = 8;
+		sea01[0][i] = 8;
 			sea0[i][0] = 8;
 			sea0[0][i] = 8;
 			sea[i][0] = 8;
@@ -34,6 +38,8 @@ int main()
 			sea2[11][i] = 97 + i;
 			sea0[i][11] = 48 + i;
 			sea0[11][i] = 97 + i;
+			sea01[i][11] = 48 + i;
+			sea01[11][i] = 97 + i;
 	}
 	sea[11][10] = 0;
 	sea[11][11] = 0;
@@ -43,12 +49,21 @@ int main()
 	sea0[11][11] = 0;
 	sea0[0][11] = 0;
 	sea0[10][11] = 48;
+	sea01[11][10] = 0;
+	sea01[11][11] = 0;
+	sea01[0][11] = 0;
+	sea01[10][11] = 48;
+	sea2[11][10] = 0;
+	sea2[11][11] = 0;
+	sea2[0][11] = 0;
+	sea2[10][11] = 48;
 	zapovnenya(sea2, COL);
 	cout << "Oberit kilkist gravciv\n1 - Odin gravec\n2 - Dva gravci\n";
 	cin >> choys;
 
 	system("CLS");
 	zapovnenya(sea0, COL);
+	
 	bool step=true;
 	int ship = 20;
 	int ship1 = 20;
@@ -65,11 +80,11 @@ int main()
 				int h, vint = 0;
 				for (int i = 0; i < 12; i++)
 				{
-					cout << z << ' ';
+					
 					for (int j = 0; j < 12; j++)
 						cout << sea[i][j];
 
-					cout << "\t\t"<< z<<' ';
+					cout << "\t\t";
 					for (int k = 0; k < 12; k++)
 						cout << sea0[i][k];
 
@@ -135,7 +150,128 @@ int main()
 	}
 	else if (choys == 2)
 	{
+		string player1="Player 1";
+		string player2= "Player 2";
+		cout << "Vedit imya pershogo gravcya" << endl;
+		cin >> player1;
+		cout << "Vedit imya drugogo gravcya" << endl;
+		cin >> player2;
+		system("CLS");
+		while (true)
+		{
+			step = true;
+			while (step)
+			{
+				step = 0;
+				char v;
+				int h, vint = 0;
+				cout << "Grae gravec "<<player1 << endl;
+				for (int i = 0; i < 12; i++)
+				{
+					cout << ' ';
+					for (int j = 0; j < 12; j++)
+						cout << sea[i][j];
 
+					cout << "\t\t";
+					for (int k = 0; k < 12; k++)
+						cout << sea0[i][k];
+
+					cout << endl;
+				}
+				cout << endl << "Vedit koordinaty!\nBukva->" << endl;
+				cin >> v;
+				cout << "Cifra->" << endl;
+				cin >> h;
+
+				system("CLS");
+				for (int i = 1, l = 97; i < 11; i++, l++)
+					if ((int)v == l)
+					{
+						vint = i;
+						break;
+					}
+				sea[h][vint] = sea2[h][vint];
+				if (sea[h][vint] == -78)
+				{
+					ship--;
+					step = 1;
+					sea2[h][vint] = 219;
+				}
+				else if (sea[h][vint] == 0)
+				{
+					sea[h][vint] = 42;
+					sea2[h][vint] = 42;
+				}
+				if (ship == 0)
+				{
+					cout << "Vitayo vigrav gravetc "<<player1 << endl;
+					break;
+				}
+			}
+			if (ship == 0||ship1==0)
+			{
+				
+				break;
+			}
+			step = true;
+			while (step)
+			{
+				step = true;
+				while (step)
+				{
+					step = 0;
+					char v;
+					int h, vint = 0;
+					cout << "Grae gravec " << player2 << endl;
+					for (int i = 0; i < 12; i++)
+					{
+						cout << ' ';
+						for (int j = 0; j < 12; j++)
+							cout << sea01[i][j];
+
+						cout << "\t\t";
+						for (int k = 0; k < 12; k++)
+							cout << sea2[i][k];
+
+						cout << endl;
+					}
+					cout << endl << "Vedit koordinaty!\nBukva->" << endl;
+					cin >> v;
+					cout << "Cifra->" << endl;
+					cin >> h;
+
+					system("CLS");
+					for (int i = 1, l = 97; i < 11; i++, l++)
+						if ((int)v == l)
+						{
+							vint = i;
+							break;
+						}
+					sea01[h][vint] = sea0[h][vint];
+					if (sea01[h][vint] == -78)
+					{
+						ship1--;
+						step = 1;
+						sea0[h][vint] = 219;
+					}
+					else if (sea01[h][vint] == 0)
+					{
+						sea01[h][vint] = 42;
+						sea0[h][vint] = 42;
+					}
+					if (ship == 0)
+					{
+						cout << "Vitayo vigrav gravetc " << player2 << endl;
+						break;
+					}
+				}
+			}
+			if (ship == 0 || ship1 == 0)
+			{
+				
+				break;
+			}
+		}
 	}
 	
 	

@@ -22,41 +22,42 @@ int main()
 			sea01[i][j] = 0;
 		}
 
-	for (int i = 0; i < 11; i++)
+	for (int i = 0; i < 12; i++)
 	{
-		sea01[i][0] = 8;
-		sea01[0][i] = 8;
-			sea0[i][0] = 8;
-			sea0[0][i] = 8;
-			sea[i][0] = 8;
-			sea[0][i] = 8;
-			sea2[i][0] = 8;
-			sea2[0][i] = 8;
+		sea01[i][0] = 179;
+		sea01[0][i] = 196;
+			sea0[i][0] = 179;
+			sea0[0][i] = 196;
+			sea[i][0] = 179;
+			sea[0][i] = 196;
+			sea2[i][0] = 179;
+			sea2[0][i] = 196;
 			sea[i][11] = 48 + i;
-			sea[11][i] = 97 + i;
+			sea[11][i] = 96 + i;
 			sea2[i][11] = 48 + i;
-			sea2[11][i] = 97 + i;
+			sea2[11][i] = 96 + i;
 			sea0[i][11] = 48 + i;
-			sea0[11][i] = 97 + i;
+			sea0[11][i] = 96 + i;
 			sea01[i][11] = 48 + i;
-			sea01[11][i] = 97 + i;
+			sea01[11][i] = 96 + i;
 	}
-	sea[11][10] = 0;
+	
 	sea[11][11] = 0;
 	sea[0][11] = 0;
 	sea[10][11] = 48;
-	sea0[11][10] = 0;
+	sea[0][0] = 218;
 	sea0[11][11] = 0;
 	sea0[0][11] = 0;
 	sea0[10][11] = 48;
-	sea01[11][10] = 0;
+	sea0[0][0] = 218;
 	sea01[11][11] = 0;
 	sea01[0][11] = 0;
 	sea01[10][11] = 48;
-	sea2[11][10] = 0;
+	sea01[0][0] = 218;
 	sea2[11][11] = 0;
 	sea2[0][11] = 0;
 	sea2[10][11] = 48;
+	sea2[0][0] = 218;
 	zapovnenya(sea2, COL);
 	cout << "Oberit kilkist gravciv\n1 - Odin gravec\n2 - Dva gravci\n";
 	cin >> choys;
@@ -168,7 +169,7 @@ int main()
 				cout << "Grae gravec "<<player1 << endl;
 				for (int i = 0; i < 12; i++)
 				{
-					cout << ' ';
+					
 					for (int j = 0; j < 12; j++)
 						cout << sea[i][j];
 
@@ -225,7 +226,7 @@ int main()
 					cout << "Grae gravec " << player2 << endl;
 					for (int i = 0; i < 12; i++)
 					{
-						cout << ' ';
+					
 						for (int j = 0; j < 12; j++)
 							cout << sea01[i][j];
 

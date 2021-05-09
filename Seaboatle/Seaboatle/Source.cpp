@@ -1,5 +1,6 @@
 #include<iostream>
 #include<time.h>
+#include<conio.h>
 #define COL 12
 using namespace std;
 void zapovnenya(char sea2[][COL], int size);
@@ -13,6 +14,7 @@ int main()
 	char sea0[COL][COL];
 	char sea01[COL][COL];
 	char z = '|';
+	system("color 02");
 	for (int i = 0; i < COL; i++)
 		for (int j = 0; j < COL; j++)
 		{
@@ -66,8 +68,8 @@ int main()
 	zapovnenya(sea0, COL);
 	
 	bool step=true;
-	int ship = 20;
-	int ship1 = 20;
+	int ship = 1;
+	int ship1 = 1;
 	if (choys == 1)
 	{
 		while (true)
@@ -104,16 +106,27 @@ int main()
 						break;
 					}
 				sea[h][vint] = sea2[h][vint];
-				if (sea[h][vint] == -78)
+				if (sea[h][vint] == -78|| sea[h][vint]==178)
 				{
 					ship--;
 					step = 1;
+					sea[h][vint] = 219;
+					
 				}
 				else if (sea[h][vint] == 0)
 					sea[h][vint] = 42;
 				if (ship == 0)
 				{
-					cout << "Vitayo Vi vigrali!!!" << endl;
+					while (true)
+					{
+						system("color 13");
+						cout << "Vi prograli!" << endl;
+						system("color 24");
+						cout << "Vi prograli!" << endl;
+						system("color 59");
+						cout << "Vi prograli!" << endl;
+						
+					}
 					break;
 				}
 			}
@@ -130,7 +143,7 @@ int main()
 					h = rand() % 10 + 1;
 					if (sea0[h][v] == 42 || sea0[h][v] == 42 == 219)
 						step = 1;
-					if (sea0[h][v] == -78)
+					if (sea0[h][v] == -78|| sea0[h][v]==178)
 					{
 						ship1--;
 						step = 1;
@@ -140,7 +153,16 @@ int main()
 						sea0[h][v] = 42;
 					if (ship1 == 0)
 					{
-						cout << "Vi prograli!" << endl;
+						while (true)
+						{
+							system("color 13");
+							cout << "Vi prograli!" << endl;
+							system("color 24");
+							cout << "Vi prograli!" << endl;
+							system("color 59");
+							cout << "Vi prograli!" << endl;
+							
+						}
 						break;
 					}
 				}
@@ -192,11 +214,12 @@ int main()
 						break;
 					}
 				sea[h][vint] = sea2[h][vint];
-				if (sea[h][vint] == -78)
+				if (sea[h][vint] == -78|| sea[h][vint]==178)
 				{
 					ship--;
 					step = 1;
 					sea2[h][vint] = 219;
+					sea[h][vint] = 219;
 				}
 				else if (sea[h][vint] == 0)
 				{
@@ -205,14 +228,33 @@ int main()
 				}
 				if (ship == 0)
 				{
-					cout << "Vitayo vigrav gravetc "<<player1 << endl;
+					while (true)
+					{
+						system("color 13");
+						cout << "Vitayo vigrav gravetc " << player1 << endl;
+						system("color 24");
+						cout << "Vitayo vigrav gravetc " << player1 << endl;
+						system("color 59");
+						cout << "Vitayo vigrav gravetc " << player1 << endl;
+						
+					}
+					
 					break;
 				}
 			}
 			if (ship == 0||ship1==0)
 			{
 				
-				break;
+				while (true)
+				{
+					system("color 13");
+					cout << "Vitayo vigrav gravetc " << player1 << endl;
+					system("color 24");
+					cout << "Vitayo vigrav gravetc " << player1 << endl;
+					system("color 59");
+					cout << "Vitayo vigrav gravetc " << player1 << endl;
+
+				}
 			}
 			step = true;
 			while (step)
@@ -249,11 +291,12 @@ int main()
 							break;
 						}
 					sea01[h][vint] = sea0[h][vint];
-					if (sea01[h][vint] == -78)
+					if (sea01[h][vint] == -78|| sea01[h][vint]==178)
 					{
 						ship1--;
 						step = 1;
 						sea0[h][vint] = 219;
+						sea01[h][vint] = 219;
 					}
 					else if (sea01[h][vint] == 0)
 					{
@@ -262,15 +305,32 @@ int main()
 					}
 					if (ship == 0)
 					{
-						cout << "Vitayo vigrav gravetc " << player2 << endl;
-						break;
+						while (true)
+						{
+							system("color 13");
+							cout << "Vitayo vigrav gravetc " << player2 << endl;
+							system("color 24");
+							cout << "Vitayo vigrav gravetc " << player2 << endl;
+							system("color 59");
+							cout << "Vitayo vigrav gravetc " << player2 << endl;
+							
+						}
 					}
 				}
 			}
 			if (ship == 0 || ship1 == 0)
 			{
 				
-				break;
+				while (true)
+				{
+					system("color 13");
+					cout << "Vitayo vigrav gravetc " << player2 << endl;
+					system("color 24");
+					cout << "Vitayo vigrav gravetc " << player2 << endl;
+					system("color 59");
+					cout << "Vitayo vigrav gravetc " << player2 << endl;
+
+				}
 			}
 		}
 	}
